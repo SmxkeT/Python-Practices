@@ -4,6 +4,9 @@
 USD = 1.27
 EUR = 1.17
 
+miles = 1
+kilometer = 1.60
+
 def cconverter(): #Function to convert the currency 
     print("Welcome, to convert currency please enter below.")
     useramount = float(input("Enter amount to convert: ")) #Take float value from user.
@@ -17,7 +20,24 @@ def cconverter(): #Function to convert the currency
     else:
         print("Invalid input, please restart the process.") 
 
+def DistanceCon():
+    Counter = input("Miles and Kilometers conversion - Select Miles or Kilometers: ")
+    if Counter == "Miles":
+        miletrav = float(input("Enter the distance to convert to kilometers: "))
+        print(f"Miles converted to kilometers successfully! - Distance in Km is: {miletrav*kilometer}")
+    
+    elif Counter == "Kilometers":
+        miletrav = float(input("Enter the distance to convert to Miles: "))
+        print(f"Kilometers converted to miles successfully! - Distance in Miles is: {miletrav/kilometer}")
+
+    else:
+        print("Invalid Input, please restart the process.")
+
+
+
+
 
 ##Main Program area##
         #calling function to initiate the program.
-cconverter()
+#cconverter()
+DistanceCon()
