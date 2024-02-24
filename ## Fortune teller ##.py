@@ -1,4 +1,4 @@
-## Fortune teller ## 
+### Fortune teller ###
 
 
 import time #allowing usage of time
