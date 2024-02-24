@@ -19,12 +19,13 @@ def counting(): #function to call.
 
     print(f"Total of all numbers entered are: {numstore}") #display results. 
 
+    #function to call
 def interactivecount():
-    count = 0
-    numbers = int(input("How many numbers do you want to add?: "))
-    for i in range (numbers):
+    count = 0   #var storage
+    numbers = int(input("How many numbers do you want to add?: ")) 
+    for i in range (numbers): #iterate X amount based on user input
         numcount = int(input("Enter a number: "))
-        count += numcount
+        count += numcount #add userinp to count to total numbers
     print(f"The total of all the numbers combined is: {count}")
 
 interactivecount() #calling function
