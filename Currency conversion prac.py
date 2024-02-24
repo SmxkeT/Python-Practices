@@ -20,18 +20,19 @@ def cconverter(): #Function to convert the currency
     else:
         print("Invalid input, please restart the process.") 
 
-def DistanceCon():
+
+def DistanceCon(): #function to call
     Counter = input("Miles and Kilometers conversion - Select Miles or Kilometers: ")
     if Counter == "Miles":
         miletrav = float(input("Enter the distance to convert to kilometers: "))
-        print(f"Miles converted to kilometers successfully! - Distance in Km is: {miletrav*kilometer}")
+        print(f"Miles converted to kilometers successfully! - Distance in Km is: {miletrav*kilometer}") #If input matches do calc and display output
     
     elif Counter == "Kilometers":
         miletrav = float(input("Enter the distance to convert to Miles: "))
         print(f"Kilometers converted to miles successfully! - Distance in Miles is: {miletrav/kilometer}")
 
     else:
-        print("Invalid Input, please restart the process.")
+        print("Invalid Input, please restart the process.") #break
 
 
 
