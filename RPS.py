@@ -1,4 +1,4 @@
-import random #allowing use of the random time and OS libraries.
+import random #allowing use of the random time and OS libraries..
 import time
 import os
 
