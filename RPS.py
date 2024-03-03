@@ -1,5 +1,8 @@
-import random #allowing use of the random and time libraries.
+import random #allowing use of the random time and OS libraries.
 import time
+import os
+
+os.system("color a") #If running on console will change text to green(Just prefer how that looks, not necessarry.)
 
 def RPS(): #Function to contain the program.
     PCScore = 0 #Vars to hold the scores of the user and computer. 
@@ -14,7 +17,7 @@ def RPS(): #Function to contain the program.
             print("It's a tie, both have chosen rock!")
 
         elif PCchoice == "R" and userchoice == "P":
-            print("You Win!, Paper beats rock")
+            (print("You Win!, Paper beats rock"))
             userscore += 1
 
         elif PCchoice == "R" and userchoice == "S":
@@ -33,7 +36,7 @@ def RPS(): #Function to contain the program.
             userscore += 1
         
         if PCchoice == "S" and userchoice == "S":
-            print("It's a tiem both have chosen scissors.")
+            print("It's a tie, both have chosen scissors.")
 
         elif PCchoice == "S" and userchoice == "R":
             print("You win!, Rock beats scissors")
@@ -57,6 +60,9 @@ def RPS(): #Function to contain the program.
                 print("NPC WINS!")
             else:
                 print("IT'S A TIE!")
+
+            time.sleep(2) #Added so can see final result in CMD console. Would close too fast otherwise.
+            input("Thank you for playing! - Press enter to exit...")
             break
         else:
             pass #If the user has selected Y, the program will pass and repeat again.
