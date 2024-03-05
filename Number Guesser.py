@@ -1,4 +1,4 @@
-import time #Importing Libraries.
+import time #Importing Libraries...
 import os
 import random
 
